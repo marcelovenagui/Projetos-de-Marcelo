@@ -51,6 +51,8 @@ h1{
     margin: 3;
     cursor: pointer;
     border-radius: 50%;
+    font-weight: bolder;
+    font-size: 20px;
 }
 
 .botao-amareloqueimado{
@@ -61,7 +63,8 @@ h1{
     margin: 3;
     cursor: pointer;
     border-radius: 50%;
-    
+    font-weight: bolder;
+    font-size: 23px;
 }
 
 .botao-cinza{
@@ -72,6 +75,8 @@ h1{
     margin: 3;
     cursor: pointer;
     border-radius: 50%;
+    font-weight: bolder;
+    font-size: 23px;
 }
 
 #botao0{
