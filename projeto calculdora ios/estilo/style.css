@@ -88,6 +88,16 @@ h1{
     transition: 0.1s;
 }
 
+.botao-amareloqueimado:active{
+    background-color: #D9D9D9;
+    transition: 0.1s;
+}
+
+#igual:active{
+    background-color: #D9D9D9;
+    transition: 0.1s; 
+}
+
 .botao-cinza:active{
     background-color: #737373;
     transition: 0.1s;

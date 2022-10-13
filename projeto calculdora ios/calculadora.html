@@ -11,36 +11,36 @@
     <div class="fundo">
         <h1>Calculadora IOS</h1>
         <div class="calculadora">
-            <p id="resultado">15</p>
+            <p id="resultado"></p>
             <table>
                 <tr>
-                    <td><button class="botao-branco">AC</button></td>
+                    <td><button class="botao-branco" onclick="clean()">AC</button></td>
                     <td><button class="botao-branco">+/-</button></td>
                     <td><button class="botao-branco">%</button></td>
-                    <td><button class="botao-amareloqueimado">÷</button></td>
+                    <td><button class="botao-amareloqueimado" onclick="insert('/')" id="divisao" >÷</button></td>
                 </tr>
                 <tr>
-                    <td><button class="botao-cinza">7</button></td>
-                    <td><button class="botao-cinza">8</button></td>
-                    <td><button class="botao-cinza">9</button></td>
-                    <td><button class="botao-amareloqueimado">x</button></td>
+                    <td><button class="botao-cinza" onclick="insert('7')">7</button></td>
+                    <td><button class="botao-cinza" onclick="insert('8')">8</button></td>
+                    <td><button class="botao-cinza" onclick="insert('9')">9</button></td>
+                    <td><button class="botao-amareloqueimado" onclick="insert('*')">x</button></td>
                 </tr>
                 <tr>
-                    <td><button class="botao-cinza">4</button></td>
-                    <td><button class="botao-cinza">5</button></td>
-                    <td><button class="botao-cinza">6</button></td>
-                    <td><button class="botao-amareloqueimado">-</button></td>
+                    <td><button class="botao-cinza" onclick="insert('4')">4</button></td>
+                    <td><button class="botao-cinza" onclick="insert('5')">5</button></td>
+                    <td><button class="botao-cinza" onclick="insert('6')">6</button></td>
+                    <td><button class="botao-amareloqueimado" onclick="insert('-')">-</button></td>
                 </tr>
                 <tr>
-                    <td><button class="botao-cinza">1</button></td>
-                    <td><button class="botao-cinza">2</button></td>
-                    <td><button class="botao-cinza">3</button></td>
-                    <td><button class="botao-amareloqueimado">+</button></td>
+                    <td><button class="botao-cinza" onclick="insert('1')">1</button></td>
+                    <td><button class="botao-cinza" onclick="insert('2')">2</button></td>
+                    <td><button class="botao-cinza" onclick="insert('3')">3</button></td>
+                    <td><button class="botao-amareloqueimado" onclick="insert('+')">+</button></td>
                 </tr>
                 <tr>
-                    <td colspan="2"><button class="botao-cinza" style="width:105px;" id="botao0">0</button></td>
-                    <td><button class="botao-cinza">.</button></td>
-                    <td><button class="botao-amareloqueimado">=</button></td>
+                    <td colspan="2"><button class="botao-cinza" style="width:105px;" id="botao0" onclick="insert('0')">0</button></td>
+                    <td><button class="botao-cinza" onclick="insert('.')">.</button></td>
+                    <td><button class="botao-amareloqueimado" onclick="calcular()">=</button></td>
                 </tr>
             </table>
             <footer class="rodape">Por <a href="https://www.instagram.com/marcelovenagui/" target="_blank" id="link">Marcelo Venâncio</a></footer>
@@ -48,6 +48,29 @@
         
         
     </div>
-    
+
+    <script>
+
+        function insert(num){
+            var numero = document.getElementById('resultado').innerHTML;
+            document.getElementById('resultado').innerHTML = numero + num;
+        }
+
+        function clean(){
+            document.getElementById('resultado').innerHTML = ""
+        }
+
+        function calcular(){
+            var resultado = document.getElementById('resultado').innerHTML;
+
+            if(resultado)
+            {
+                document.getElementById('resultado').innerHTML = eval(resultado);
+            }
+                
+            
+        }
+
+    </script>
 </body>
 </html>
