@@ -1,5 +1,22 @@
 @charset "UTF-8";
 
+
+@media screen and (max-width: 600px){
+    button{
+        height: 3em;
+        width: 3em;
+    }
+    footer{
+        position: relative;
+        text-align: center;
+        top: 55vh;
+        font-weight: 400;
+    }
+}
+
+
+
+
 body{
     background-color: #000000;
     color: aliceblue;
