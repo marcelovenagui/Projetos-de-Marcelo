@@ -1,9 +1,56 @@
 @charset "UTF-8";
 
+body{
+    background-color: #000000;
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
+button{
+    height:4em;
+    width: 4em;
+    border-radius: 50%;
+    color: rgb(0, 0, 0);
+    font-size: large;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+#start{
+    background-color: rgb(31, 230, 31);
+    color: aliceblue;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.425);
+}
+
+#clean{
+    background-color: red;
+    color: aliceblue;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.425);
+}
+
+#pause{
+    background-color: gray;
+    color: aliceblue;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.425);
+}
 
 .watch{
     position: relative;
     text-align: center;
-    top: 40vh;
+    top: 30vh;
+}
+
+footer{
+    position: relative;
+    text-align: center;
+    top: 68vh;
+    font-weight: 400;
+}
+
+footer > a{
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: bolder;
 }
