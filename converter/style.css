@@ -9,6 +9,7 @@ body{
 .container{
     margin-top: 3em;
     width: 16em;
+    box-shadow: 1px 1px 1px black;
 }
 
 h1{
