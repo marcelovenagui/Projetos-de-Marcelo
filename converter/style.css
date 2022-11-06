@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+body{
+    display: flex;
+    justify-content: center;
+    background-color: #a7acba;
+}
+
+.container{
+    margin-top: 6em;
+    width: 16em;
+}
+
+h1{
+    margin: 0;
+    padding: 1em;
+    text-align: center;
+}
+
+.inputcontainer{
+    background-color: #2d385b;
+    height: 15em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.outputcontainer{
+    background-color: #ffffff;
+    height: 15em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    word-break: break-all;
+}
+
+input{
+    background-color: #2d385b;
+    height: 3em;
+    width: 5em;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    color: #ffffff;
+}
+
+ input:focus{
+    outline: none;
+}
