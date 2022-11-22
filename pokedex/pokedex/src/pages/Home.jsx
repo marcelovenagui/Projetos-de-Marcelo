@@ -7,7 +7,10 @@ import axios from 'axios'
 
 
 const Home = () => {
-  axios.get('https://pokeapi.co/api/v2/')
+  axios
+  .get('https://pokeapi.co/api/v2/pokemon?limit=50&offset=0')
+  .then((res) => console.log(res))
+  .catch((err) => console.log(err)) ;
   return (
     <div>
       <Navbar />
