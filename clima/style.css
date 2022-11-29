@@ -1,0 +1,29 @@
+/* Geral*/
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: linear-gradient(180deg, rgba(89,86,238,1) 0%, rgb(142, 209, 245));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.hide{
+    display: none;
+}
+
+.container{
+    background-color: #5c54ed;
+    box-shadow: rgba(0, 0, 0, .24) 0px 3px 8px;
+    padding: 2rem;
+    color: #fff;
+    border-radius: 1rem;
+}
